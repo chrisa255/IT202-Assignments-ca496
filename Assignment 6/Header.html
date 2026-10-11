@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="Font.css">
+
+</head>
+
+<body>
+
+<h1 id="Heading">Welcome</h1>
+
+<p>Move mouse over the text to display the message</p>
+
+<input id="Input" placeholder="Here">
+
+<script>
+
+    let heading = document.getElementById("Heading");
+
+    let input = document.getElementById("Input");
+
+    heading.style.display = "none";
+
+    input.onmouseover = function() 
+    {
+        heading.style.display = "block";
+    };
+
+    input.onmouseout = function()
+    {
+        heading.style.display = "none";
+    };
+
+
+</script>
+
+</body>
+
+</html>
