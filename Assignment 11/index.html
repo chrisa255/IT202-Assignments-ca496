@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Email verification</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+
+        body 
+        {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            margin: 20px;
+        }
+
+        label 
+        {
+            display: inline-block;
+            margin-top: 8px;
+        }
+
+        input 
+        {
+            padding: 7px;
+            width: 150px;
+        }
+
+        button 
+        {
+            margin-top: 10px;
+            padding: 5px 12px;
+            cursor: pointer;
+        }
+
+    
+    </style>
+
+</head>
+
+
+<body>
+
+    <h2>Please verify your email address</h2>
+
+    <form id="emailForms">
+
+        <label for="email">Email Address:</label>
+
+        <input type="email" id="email">
+
+        <span class="required">*</span>
+
+        <span id="emailErrors" class="required"></span>
+
+        <br>
+
+
+        <label for="confirmsEmail">Confirm Email Address:</label>
+
+        <input type="email" id="confirmsEmail">
+
+        <span class="required">*</span>
+
+        <span id="confirmsError" class="required"></span>
+
+        <br>
+
+
+        <button type="button" id="confirms">Confirm</button>
+
+        <p id="message"></p>
+
+    </form>
+
+    <script>
+
+        $(document).ready(function() {
+
+            $("#confirms").click(function() {
+
+                const email = $("#email").val().trim();
+
+                const confirmsEmail = $("#confirmsEmail").val().trim();
+
+                $("#emailErrors").text("");
+
+                $("#confirmsError").text("");
+
+                $("#message").text("");
+
+                if (email === "") 
+                
+                {
+                    $("#emailErrors").text("This field is required");
+                }
+
+                if (confirmsEmail === "") 
+                
+                {
+                    $("#confirmsError").text("This field is required");
+                }
+
+                if (email === "" || confirmsEmail === "") 
+                
+                {
+                    return;
+                }
+
+                if (email !== confirmsEmail) 
+                
+                {
+                    $("#message").text("The email addresses must match.");
+                }
+
+                else 
+                
+                {
+                    alert("Email confirmation successful");
+                }
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
