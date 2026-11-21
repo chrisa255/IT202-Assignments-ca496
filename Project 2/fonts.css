@@ -1,0 +1,252 @@
+
+
+
+
+h1, h2, h3 
+
+{
+
+    text-align: center;
+
+}
+
+body 
+
+{
+
+    background-color: rgb(107, 100, 100);
+
+    background-image: url("Truck.jpg");
+    
+    background-size: cover;
+
+    background-attachment: fixed;
+
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+
+}
+
+nav 
+
+{
+
+    background-color: white;
+
+    padding: 14px;
+
+    text-align: center;
+
+    border-radius: 11px;
+
+    margin: 16px;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+}
+
+nav a 
+
+{
+
+    display: inline-block;
+
+    background-color: white;
+
+    color: black;
+
+    text-decoration: none;
+
+    padding: 13px 16px;
+
+    margin: 6px;
+
+    border-right: 1px solid #aaaaaa;
+
+    font-weight: bold;
+
+}
+
+nav a:hover 
+
+{
+
+    background-color: #dddddd;
+
+}
+
+table 
+
+{
+
+    background: rgba(242, 241, 241, 0.878);
+
+    border-collapse: collapse;
+
+    margin: 18px auto;
+
+    width: 85%;
+
+}
+
+th, td 
+
+{
+
+    padding: 12px;
+
+    border: 1px solid #908f8f;
+
+    text-align: left;
+
+
+}
+
+.container 
+
+{
+
+    background: rgba(242, 241, 241, 0.847);
+
+    width: 70%;
+
+    max-width: 710px;
+
+    padding: 24px;
+
+    border-radius: 16px;
+
+    margin: 42px auto;
+
+}
+
+form 
+
+{
+
+    background: rgba(242, 241, 241, 0.892);
+
+    width: 255px;
+
+    padding: 26px;
+
+    border-radius: 16px;
+
+    margin: auto;
+
+}
+
+label 
+
+{
+
+    margin-top: 16px;
+
+    display: block;
+
+}
+
+input[type="text"],
+
+input[type="password"],
+
+input[type="number"],
+
+input[type="date"],
+
+select,
+
+textarea 
+
+{
+
+    width: 100%;
+
+    box-sizing: border-box;
+    
+    padding: 9px;
+
+}
+
+input[type="submit"],
+
+input[type="reset"],
+
+button 
+
+{
+
+    padding: 10px;
+
+    margin-top: 16px;
+
+    cursor: pointer;
+
+}
+
+.transaction 
+
+{
+
+    display: block;
+
+    background: rgba(255, 255, 255, 0.8);
+
+    color: black;
+
+    text-decoration: none;
+
+    padding: 16px;
+
+    margin: 13px 0;
+
+    border-radius: 9px;
+
+}
+
+.transaction:hover 
+
+{
+
+    background: white;
+
+}
+
+
+.invalid 
+
+{
+
+    border: 3px solid red;
+
+}
+
+
+.menu-container 
+
+{
+
+    background: rgba(242, 241, 241, 0.829);
+
+    width: 75%;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    margin: 25px auto;
+
+    box-sizing: border-box;
+
+}
+
+
+
+
+
+
