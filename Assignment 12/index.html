@@ -1,0 +1,65 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Dog Breed Search</title>
+
+</head>
+
+<body>
+
+
+<h3>Please enter the name of the dog breed you want to look up</h3>
+
+
+Dog Breed's name:
+
+<input type="text" id="dogBreed" onkeyup="searchBreed()">
+
+<p id="result">FOUND:</p>
+
+<script>
+
+function searchBreed()
+
+{
+    var breeds = document.getElementById("dogBreed").value;
+
+    var xhttp = new XMLHttpRequest();
+
+    xhttp.onreadystatechange = function()
+
+    {
+
+        if (this.readyState == 4 && this.status == 200)
+
+        {
+
+            document.getElementById("result").innerHTML = this.responseText;
+
+        }
+
+    };
+
+
+    xhttp.open("GET", "PHP1.php?dogBreed=" + encodeURIComponent(breeds), true);
+
+    xhttp.send();
+
+
+}
+
+</script>
+
+</body>
+
+
+</html>
+
+
+
+
